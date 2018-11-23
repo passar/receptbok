@@ -2,12 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component'; // utan filändelse!
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component'; // utan filändelse!
 
 @NgModule({ // unik startup
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule

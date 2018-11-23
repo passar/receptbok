@@ -2,10 +2,15 @@ import { Component } from "@angular/core";
 
 @Component({  // kallas för decorator som börjar med @
     selector: 'app-server',
-    templateUrl:'./server.component.html'
+    templateUrl: './server.component.html'
 })
 
 
 export class ServerComponent {
+    serverId: number = 10
+    serverStatus: string = 'offline'
 
+    getServerStatus() {
+        return this.serverStatus
+    }
 }
