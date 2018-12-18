@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-servers', // selection by <x></x>
   // selector:'[app-servers]', // selection by attribute <div x></div>
   // selector:'.app-servers', // val genom class
-  templateUrl: './servers.component.html',
+  templateUrl: './servers.component.html', // måste man ha
   // template: ` <!-- används för att kunna skriva flera rader i denna filen -->
   // <app-server></app-server><app-server></app-server>
   // <p>ifrån servers.components.ts</p>
@@ -15,6 +15,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer = false
   serverCreationStatus = 'No server was created!'
+  serverName=""
 
   constructor() {
     setTimeout(() => {
@@ -24,8 +25,13 @@ export class ServersComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   onCreateServer() {
     this.serverCreationStatus = 'Server was created!'
+  }
+
+  onUpdateServerName(event: any) {
+    //console.log(event)
+    this.serverName = (<HTMLInputElement>event.target).value
   }
 }
