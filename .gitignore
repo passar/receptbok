@@ -7,6 +7,8 @@
 
 # dependencies
 /node_modules
+/serverstarter/node_modules
+/shopbootstrap/node_modules
 
 # IDEs and editors
 /.idea
