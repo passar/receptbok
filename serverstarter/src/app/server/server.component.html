@@ -1,0 +1,7 @@
+<!-- <p>I'm in the server component.</p> viktigt att vara i taggar och aldrig utanför då de inte kan upprepas osv -->
+<!-- <p>{{ 'server' }} with ID {{ serverId }} is {{ serverStatus }}</p> -->
+<!-- <p ngStyle>{{ 'server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p> -->
+
+<p [ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{online: serverStatus=== 'online'}"
+>{{ 'server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
