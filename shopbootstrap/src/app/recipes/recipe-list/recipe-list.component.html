@@ -19,7 +19,7 @@
       </div>
       <span class="pull-right">
         <!-- src="{{ gurka.imagePath}}" fungerar ochså men [src] är en angularspecialare-->
-        <img [src]="gurka.imagePath" alt="{{ gurka.name }}" class="img-responsive" style="max-height:250px;">
+        <img [src]="gurka.imagePath" alt="{{ gurka.name }}" class="img-responsive" style="max-height:100px;">
       </span>
     </a>
     
@@ -29,8 +29,8 @@
         <p class="list-group-item-text">{{ gurka.description }}</p>
       </div>
       <span class="pull-right">
-        <!-- src="{{ gurka.imagePath}}" fungerar ochså men [src] är en angularspecialare-->
-        <img [src]="gurka.imagePath" alt="{{ gurka.name }}" class="img-responsive" style="max-height:250px;">
+        <!-- src="{{ gurka.imagePath}}" fungerar ochså men [src] är en angularspecialare. Property binding -->
+        <img [src]="gurka.imagePath" alt="{{ gurka.name }}" class="img-responsive" style="max-height:100px;">
       </span>
     </a>
 
